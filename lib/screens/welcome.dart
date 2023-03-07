@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
 import 'package:chatbot_app_2/utilities/color.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -8,18 +7,21 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_typing_uninitialized_variables
-    var onPressed;
     return Scaffold(
       body: Center(
         child: (Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text('Hello welcome to FreeMindz'),
+              // ignore: avoid_unnecessary_containers
+              Container(child: const Text('Hello welcome to FreeMindz')),
               const Text('Meet Sandie'),
               const Text('Your chat buddie'),
-              const Image(
+              const ClipOval(
+                child:Image(
                   image: AssetImage('assets/images/images-chatbot.png')),
-              TextButton(onPressed: onPressed, child: const Text('continue'))
+              ),
+              // ignore: avoid_print
+              TextButton(onPressed:()=>{print('Pressed')},style: TextButton.styleFrom(foregroundColor: AppColors.button), child: const Text('continue'),)
             ])),
       ),
     );
