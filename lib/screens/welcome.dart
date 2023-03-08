@@ -6,24 +6,30 @@ class WelcomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // ignore: prefer_typing_uninitialized_variables
     return Scaffold(
-      body: Center(
+      // ignore: avoid_unnecessary_containers
+      body:Container(
+      child: Center(
         child: (Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment:CrossAxisAlignment.center,
             children: <Widget>[
-              // ignore: avoid_unnecessary_containers
-              Container(child: const Text('Hello welcome to FreeMindz')),
-              const Text('Meet Sandie'),
-              const Text('Your chat buddie'),
-              const ClipOval(
-                child:Image(
-                  image: AssetImage('assets/images/images-chatbot.png')),
+              const Text('WELCOME TO FREEMINDZ',style:TextStyle(color: AppColors.buttonText)),
+              const Text('Meet Sandie',style:TextStyle(color: AppColors.buttonText)),
+              const Text('Your chat buddie',style:TextStyle(color: AppColors.buttonText)),
+               ClipRRect(
+                borderRadius: BorderRadius.circular(100),
+                child:
+                    const Image(image: AssetImage('assets/images/images2-chatbot.jpg')),
               ),
-              // ignore: avoid_print
-              TextButton(onPressed:()=>{print('Pressed')},style: TextButton.styleFrom(foregroundColor: AppColors.button), child: const Text('continue'),)
+              TextButton(
+                // ignore: avoid_print
+                onPressed: () => {print('Pressed')},
+                style: TextButton.styleFrom(foregroundColor: AppColors.button),
+                child: const Text('continue'),
+              )
             ])),
       ),
-    );
+  ),);
   }
 }
