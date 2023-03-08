@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:chatbot_app_2/screens/welcome.dart';
+import 'package:chatbot_app_2/screens/signUp.dart';
 import 'package:chatbot_app_2/utilities/color.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor:AppColors.primary,
 
       ),
-      home: const WelcomeScreen(),
+      home: const SignUP(),
     );
   }
 }
