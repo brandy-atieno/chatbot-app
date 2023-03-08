@@ -22,11 +22,14 @@ class WelcomeScreen extends StatelessWidget {
                 child:
                     const Image(image: AssetImage('assets/images/images2-chatbot.jpg')),
               ),
-              TextButton(
-                // ignore: avoid_print
-                onPressed: () => {print('Pressed')},
-                style: TextButton.styleFrom(foregroundColor: AppColors.button),
-                child: const Text('continue'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextButton(
+                  // ignore: avoid_print
+                  onPressed: () => {print('YSou got this')},
+                  style: TextButton.styleFrom(backgroundColor: AppColors.button,fixedSize: const Size(227,61),shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0))),
+                  child: const Text('continue',style:TextStyle(color: AppColors.buttonText)),
+                ),
               )
             ])),
       ),
