@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:chatbot_app_2/screens/welcome.dart';
 import 'package:chatbot_app_2/screens/sign_up.dart';
+import 'package:chatbot_app_2/screens/sign_in.dart';
+
 import 'package:chatbot_app_2/utilities/color.dart';
 
 void main() {
@@ -16,10 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'Chat Bot Application',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor:AppColors.primary,
-
+        scaffoldBackgroundColor: AppColors.primary,
       ),
-      home: const SignUP(),
+      home: const SignIn(),
     );
   }
 }
