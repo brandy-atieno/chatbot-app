@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:chatbot_app_2/screens/welcome.dart';
-import 'package:chatbot_app_2/screens/signUp.dart';
+import 'package:chatbot_app_2/screens/sign_up.dart';
 import 'package:chatbot_app_2/utilities/color.dart';
 
 void main() {
