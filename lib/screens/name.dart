@@ -6,30 +6,61 @@ class Name extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(
-      children: [
-        const Text('Choose Name'),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(100),
-          child: const Image(
-              image: AssetImage('assets/images/images2-chatbot.jpg')),
-        ),
-        const Text(' Hey Sandie'),
-        ClipRRect(
-          borderRadius: BorderRadius.circular(100),
-          child: const Image(
-              image: AssetImage('assets/images/images2-chatbot.jpg')),
-        ),
-        const Text('Select a name'),
-        const TextButton(
-          // ignore: avoid_print
-          onPressed: () => {print('Name time')},
-
-          // ignore: unnecessary_const
-          child:
-              const Text('Next', style: TextStyle(color: AppColors.buttonText)),
-        )
-      ],
-    ));
+        body: Container(
+          padding:const EdgeInsets.all(8.0),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+          const Text('Choose Name',
+              style: TextStyle(color: AppColors.buttonText)),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              child: const Image(
+                  image: AssetImage('assets/images/images2-chatbot.jpg')),
+            ),
+          ),
+          const Align(
+            alignment: Alignment.center,
+            child: Text(' Hey Sandie here ...',
+                style: TextStyle(color: AppColors.buttonText)),
+          ),
+          Align(
+                      alignment: Alignment.centerRight,
+        
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              child: const Image(
+                  image: AssetImage('assets/images/images2-chatbot.jpg')),
+            ),
+          ),
+          const Align(
+                                alignment: Alignment.centerLeft,
+        
+            child: Text('I am excited to know you please select a name to continue',
+                style: TextStyle(color: AppColors.buttonText)),
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: AppColors.buttonText),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(50.0),
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: AppColors.buttonText),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(50.0),
+                  ),
+                ),
+                // fillColor:,
+                hintText: 'Write a name ...',
+                hintStyle: TextStyle(color: AppColors.buttonText)),
+          ),
+              ],
+            ),
+        ));
   }
 }

@@ -6,14 +6,13 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: null,
-          icon: Icon(Icons.menu),
-          tooltip: 'Navigation Menu',
-        ),
-      ),
+    return Scaffold(
+      body:Column(
+        children: const <Widget>[
+           Text('CHOOSE TIME'),
+        ]
+
+      )
     );
   }
 }
