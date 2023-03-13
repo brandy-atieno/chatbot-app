@@ -9,13 +9,13 @@ class Time extends StatefulWidget {
 }
 
 class _TimeState extends State<Time> {
-  late int selectedRadioTile;
+  late String selectedRadioTile;
   @override
   void initState() {
     super.initState();
-    selectedRadioTile = 0;
+    selectedRadioTile = '';
   }
-setSelectedRadioTile(int val){
+setSelectedRadioTile( String val){
 setState((){
   selectedRadioTile=val;
   }
@@ -34,10 +34,11 @@ setState((){
         const Text('A chat a day keeps the mind free',
             style: TextStyle(color: AppColors.buttonText)),
         RadioListTile(
-          value: 1,
+          value: 'Morning',
           groupValue: selectedRadioTile,
           onChanged: (val) => {
           setSelectedRadioTile(val!),
+          print('Time: $val')
           },
           title: const Text('Morning',
               style: TextStyle(color: AppColors.buttonText)),
@@ -49,10 +50,12 @@ setState((){
           // activeColor: Colors.blue,
         ),
         RadioListTile(
-          value: 2,
+          value: 'Day',
           groupValue: selectedRadioTile,
           onChanged: (val) => {
-          setSelectedRadioTile(val!)},
+          setSelectedRadioTile(val!),
+                    print('Time: $val')
+},
           title:
               const Text('Day', style: TextStyle(color: AppColors.buttonText)),
           subtitle: const Text('10:00 AM - 5:00 PM',
@@ -62,10 +65,12 @@ setState((){
 
         ),
         RadioListTile(
-          value: 3,
+          value: 'Evening',
           groupValue: selectedRadioTile,
           onChanged: (val) => {
-          setSelectedRadioTile(val!)},
+          setSelectedRadioTile(val!),
+                    print('Time: $val')
+},
           title: const Text('Evening',
               style: TextStyle(color: AppColors.buttonText)),
           subtitle: const Text('5:00 PM - 8:00 PM',
@@ -75,10 +80,12 @@ setState((){
           // activeColor: Colors.blue,
         ),
         RadioListTile(
-          value: 4,
+          value: 'Night',
           groupValue: selectedRadioTile,
           onChanged: (val) => {
-          setSelectedRadioTile(val!)},
+          setSelectedRadioTile(val!),
+                    print('Time: $val')
+},
           title: const Text('Night',
               style: TextStyle(color: AppColors.buttonText)),
           subtitle: const Text('8:00 PM - 11: PM',
