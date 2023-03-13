@@ -3,6 +3,8 @@ import 'package:chatbot_app_2/screens/welcome.dart';
 import 'package:chatbot_app_2/screens/sign_up.dart';
 import 'package:chatbot_app_2/screens/sign_in.dart';
 import 'package:chatbot_app_2/screens/name.dart';
+import 'package:chatbot_app_2/screens/time.dart';
+
 
 
 import 'package:chatbot_app_2/utilities/color.dart';
@@ -21,8 +23,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: AppColors.primary,
+        radioTheme: RadioThemeData(
+        fillColor: MaterialStateColor.resolveWith((states) => AppColors.button)),
       ),
-      home: const Name(),
+      home: const Time(),
     );
   }
 }
