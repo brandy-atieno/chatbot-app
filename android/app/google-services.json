@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "829089778535",
+    "project_id": "mental-bot-63fce",
+    "storage_bucket": "mental-bot-63fce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829089778535:android:1099763e380fa9f6d6bdc2",
+        "android_client_info": {
+          "package_name": "com.example.chatbot_app_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829089778535-lkriibi6su11i5n19rsbfemd4okbf4fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApUksRlBwFDWiB-7KzcOp3qER59bS3m84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829089778535-lkriibi6su11i5n19rsbfemd4okbf4fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

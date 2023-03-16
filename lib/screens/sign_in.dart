@@ -1,9 +1,29 @@
 import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:chatbot_app_2/utilities/color.dart';
+import 'package:chatbot_app_2/screens/sign_in.dart';
+import 'package:chatbot_app_2/screens/name.dart';
+import 'package:chatbot_app_2/screens/chat_screen.dart';
 
-class SignIn extends StatelessWidget {
+class SignIn extends StatefulWidget {
   const SignIn({super.key});
+
+  @override
+  State<SignIn> createState() => _SignInState();
+}
+
+class _SignInState extends State<SignIn> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  @override
+  void dispose() {
+    emailController.dispose();
+    passwordController.dispose();
+
+    super.dispose();
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +35,7 @@ class SignIn extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            const Text('LOG IN',
-                style: TextStyle(color: AppColors.buttonText)),
+            const Text('LOG IN', style: TextStyle(color: AppColors.buttonText)),
             const Text('Email', style: TextStyle(color: AppColors.buttonText)),
             TextFormField(
                 decoration: const InputDecoration(
@@ -55,7 +74,7 @@ class SignIn extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: TextButton(
                   // ignore: avoid_print
-                  onPressed: () async => print('Yey!'),
+                  onPressed: signin(),
                   style: TextButton.styleFrom(
                       backgroundColor: AppColors.button,
                       fixedSize: const Size(227, 61),
@@ -68,4 +87,7 @@ class SignIn extends StatelessWidget {
           ]),
     )));
   }
+}
+
+Future signin async() {
 }

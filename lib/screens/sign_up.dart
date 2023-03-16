@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
-// ignore: unused_import
 import 'package:chatbot_app_2/utilities/color.dart';
+import 'package:chatbot_app_2/screens/sign_in.dart';
+import 'package:chatbot_app_2/screens/name.dart';
+import 'package:chatbot_app_2/screens/time.dart';
+import 'package:chatbot_app_2/screens/chat_screen.dart';
 
 class SignUP extends StatelessWidget {
   const SignUP({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final EmailController = TextEditingController();
+    final PasswordController = TextEditingController();
     return Scaffold(
         // ignore: avoid_unnecessary_containers
         body: Container(

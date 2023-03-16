@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:chatbot_app_2/utilities/color.dart';
+import 'package:chatbot_app_2/screens/sign_in.dart';
+import 'package:chatbot_app_2/screens/name.dart';
+import 'package:chatbot_app_2/screens/time.dart';
+import 'package:chatbot_app_2/screens/chat_screen.dart';
 
 class Name extends StatelessWidget {
   const Name({super.key});
