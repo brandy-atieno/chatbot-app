@@ -8,6 +8,8 @@ import 'package:chatbot_app_2/screens/chat_screen.dart';
 import 'package:chatbot_app_2/screens/sign_up.dart';
 
 import 'package:chatbot_app_2/utilities/color.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 void main() {
   runApp(const MyApp());
