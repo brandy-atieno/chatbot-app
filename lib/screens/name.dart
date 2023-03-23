@@ -63,6 +63,20 @@ class Name extends StatelessWidget {
                 hintText: 'Write a name ...',
                 hintStyle: TextStyle(color: AppColors.buttonText)),
           ),
+            
+              TextButton(
+                  // ignore: avoid_print
+                  onPressed: () =>{
+                    Navigator.pushNamed(context,'/chatscreen')
+                  },
+                  style: TextButton.styleFrom(
+                      backgroundColor: AppColors.button,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0))),
+
+                  child: const Text('Next',
+                      style: TextStyle(color: AppColors.buttonText)),
+                ),
               ],
             ),
         ));

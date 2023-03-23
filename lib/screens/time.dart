@@ -102,7 +102,9 @@ setState((){
             padding: const EdgeInsets.all(8.0),
             child: TextButton(
               // ignore: avoid_print
-              onPressed: () async => print('Yey!'),
+              onPressed: ()=>{
+                Navigator.pushNamed(context,'/name')
+              },
               style: TextButton.styleFrom(
                   backgroundColor: AppColors.button,
                   fixedSize: const Size(227, 61),
