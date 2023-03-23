@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:bot_final/utilities/color.dart';
 import 'package:bot_final/screens/sign_in.dart';
+import 'package:bot_final/screens/sign_up.dart';
 import 'package:bot_final/screens/name.dart';
+import 'package:bot_final/screens/welcome.dart';
+
 import 'package:bot_final/screens/time.dart';
 import 'package:bot_final/screens/chat_screen.dart';
 
@@ -27,7 +30,18 @@ class MyApp extends StatelessWidget {
             fillColor:
                 MaterialStateColor.resolveWith((states) => AppColors.button)),
       ),
-      home: const ChatScreen(),
+      home: const WelcomeScreen(),
+      routes:{
+        '/signup':(context)=> const SignUP(),
+        '/signin':(context)=> const SignIn(),
+        '/name':(context)=> const Name(),
+        '/time':(context)=> const Time(),
+        '/chatscreen':(context)=> const ChatScreen(),
+
+
+
+
+      }
     );
   }
 }
