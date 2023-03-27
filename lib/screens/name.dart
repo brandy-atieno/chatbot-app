@@ -10,13 +10,15 @@ class Name extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        title: const Text('Choose A Name')
+      ),
         body: Container(
           padding:const EdgeInsets.all(8.0),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-          const Text('Choose Name',
-              style: TextStyle(color: AppColors.buttonText)),
+         
           Align(
             alignment: Alignment.centerLeft,
             child: ClipRRect(

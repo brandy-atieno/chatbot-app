@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "604543360938",
+    "project_id": "bot-final-eb1ac",
+    "storage_bucket": "bot-final-eb1ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604543360938:android:d0e25d35f4f1f7806115d3",
+        "android_client_info": {
+          "package_name": "com.example.bot_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604543360938-kuu129eekohaa814fne0nphghqs2n25r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiu8LsrCxmRUUMcrg_0Mbwu8cVmsSGDxU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604543360938-kuu129eekohaa814fne0nphghqs2n25r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

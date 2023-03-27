@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:bot_final/utilities/color.dart';
-import 'package:bot_final/screens/sign_up.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -8,15 +7,15 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // ignore: avoid_unnecessary_containers
+     appBar: AppBar(
+        title: const Text('Welcome To FreeMindz'),
+      ), 
       body: Container(
         child: Center(
           child: (Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                const Text('WELCOME TO FREEMINDZ',
-                    style: TextStyle(color: AppColors.buttonText)),
                 const Text('Meet Sandie',
                     style: TextStyle(color: AppColors.buttonText)),
                 const Text('Your chat buddie',
@@ -36,7 +35,21 @@ class WelcomeScreen extends StatelessWidget {
                         fixedSize: const Size(227, 61),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0))),
-                    child: const Text('continue',
+                    child: const Text('signup',
+                        style: TextStyle(color: AppColors.buttonText)),
+                  ),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextButton(
+                    // ignore: avoid_print
+                    onPressed: () => {Navigator.pushNamed(context, '/signin')},
+                    style: TextButton.styleFrom(
+                        backgroundColor: AppColors.button,
+                        fixedSize: const Size(227, 61),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0))),
+                    child: const Text('login',
                         style: TextStyle(color: AppColors.buttonText)),
                   ),
                 )

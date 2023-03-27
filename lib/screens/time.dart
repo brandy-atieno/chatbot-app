@@ -29,12 +29,13 @@ setState((){
 @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('CHOOSE A CHECK-IN TIME'),
+      ),
         body: Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const Text('CHOOSE A CHECK-IN TIME',
-            style: TextStyle(color: AppColors.buttonText)),
         const Text('A chat a day keeps the mind free',
             style: TextStyle(color: AppColors.buttonText)),
         RadioListTile(

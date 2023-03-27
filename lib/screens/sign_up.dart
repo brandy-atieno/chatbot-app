@@ -10,20 +10,21 @@ class SignUP extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final NameController = TextEditingController();
     final EmailController = TextEditingController();
     final PasswordController = TextEditingController();
     return Scaffold(
         // ignore: avoid_unnecessary_containers
+        appBar: AppBar(
+        title: const Text('CREATE ACCOUNT'),
+      ),
         body: Container(
             child: Center(
       child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            const Text('CREATE ACCOUNT',
-                style: TextStyle(color: AppColors.buttonText)),
-            const Text('Email', style: TextStyle(color: AppColors.buttonText)),
-            TextFormField(
+                       TextFormField(
                 decoration: const InputDecoration(
                     focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: AppColors.buttonText),
@@ -34,35 +35,32 @@ class SignUP extends StatelessWidget {
                         borderSide: BorderSide(color: AppColors.buttonText),
                         borderRadius: BorderRadius.all(
                           Radius.circular(50.0),
-                        )))),
-            const Text('Password',
-                style: TextStyle(color: AppColors.buttonText)),
-            TextFormField(
-              decoration: const InputDecoration(
-                focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: AppColors.buttonText),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(50.0),
-                  ),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(width: 2, color: AppColors.buttonText),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(50.0),
-                  ),
-                ),
-                // fillColor:,
-              ),
-            ),
+                        )),
+                        hintText:'Email'),
+                        controller:EmailController,
+                        textInputAction:TextInputAction.next),
+             TextFormField(
+                decoration: const InputDecoration(
+                    focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: AppColors.buttonText),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(50.0),
+                        )),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide: BorderSide(color: AppColors.buttonText),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(50.0),
+                        )),
+                        hintText:'Password'),
+                         controller:EmailController,
+                        textInputAction:TextInputAction.done),
             const Text('Already have an account?Log In',
                 style: TextStyle(color: AppColors.buttonText)),
             Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextButton(
                   // ignore: avoid_print
-                  onPressed: ()=>{
-                    Navigator.pushNamed(context, '/time')
-                  },
+                  onPressed: () => {Navigator.pushNamed(context, '/time')},
                   style: TextButton.styleFrom(
                       backgroundColor: AppColors.button,
                       fixedSize: const Size(227, 61),
@@ -75,4 +73,5 @@ class SignUP extends StatelessWidget {
           ]),
     )));
   }
+  
 }
