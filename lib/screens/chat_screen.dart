@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:bot_final/utilities/color.dart';
-import 'package:bot_final/screens/sign_in.dart';
-import 'package:bot_final/screens/name.dart';
-import 'package:bot_final/screens/time.dart';
-import 'package:bot_final/screens/chat_screen.dart';
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:bot_final/screens/messages.dart';
 
@@ -38,7 +33,7 @@ class _ChatScreenState extends State<ChatScreen> {
             Expanded(child: MessagesScreen(messages: messages)),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-              color: Color.fromARGB(255, 177, 57, 21),
+              color: Color.fromARGB(255, 202, 64, 128),
               child: Row(
                 children: [
                   Expanded(
