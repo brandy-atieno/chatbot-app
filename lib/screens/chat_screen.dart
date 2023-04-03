@@ -41,7 +41,7 @@ class _ChatScreenState extends State<ChatScreen> {
                           controller: _controller,
                           style: TextStyle(color: Colors.white),
                           decoration:
-                              InputDecoration(hintText: 'Send a message ...'))),
+                              InputDecoration(hintText: 'Send a message ...',hintStyle: TextStyle(color:Colors.white)))),
                   IconButton(
                       onPressed: () {
                         sendMessage(_controller.text);

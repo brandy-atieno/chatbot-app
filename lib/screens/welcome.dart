@@ -17,9 +17,9 @@ class WelcomeScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 const Text('Meet Sandie',
-                    style: TextStyle(color: AppColors.buttonText)),
+                    style: TextStyle(color: AppColors.buttonText,fontSize: 20.0)),
                 const Text('Your chat buddie',
-                    style: TextStyle(color: AppColors.buttonText)),
+                    style: TextStyle(color: AppColors.buttonText,fontSize: 16.0)),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(100),
                   child: const Image(
@@ -36,7 +36,7 @@ class WelcomeScreen extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0))),
                     child: const Text('signup',
-                        style: TextStyle(color: AppColors.buttonText)),
+                        style: TextStyle(color: AppColors.buttonText,fontSize:16.0)),
                   ),
                 ),
                  Padding(
@@ -50,7 +50,7 @@ class WelcomeScreen extends StatelessWidget {
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30.0))),
                     child: const Text('login',
-                        style: TextStyle(color: AppColors.buttonText)),
+                        style: TextStyle(color: AppColors.buttonText,fontSize:16.0)),
                   ),
                 )
               ])),

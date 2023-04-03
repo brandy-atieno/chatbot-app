@@ -37,7 +37,7 @@ setState((){
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Text('A chat a day keeps the mind free',
-            style: TextStyle(color: AppColors.buttonText)),
+            style: TextStyle(color: AppColors.buttonText,fontSize:20.0)),
         RadioListTile(
           value: 'Morning',
           groupValue: selectedRadioTile,
@@ -113,7 +113,7 @@ setState((){
                       borderRadius: BorderRadius.circular(30.0))),
 
               child: const Text('Next',
-                  style: TextStyle(color: AppColors.buttonText)),
+                  style: TextStyle(color: AppColors.buttonText,fontSize:16.0)),
             )),
       ],
     ));

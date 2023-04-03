@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:bot_final/utilities/color.dart';
+
 
 class MessagesScreen extends StatefulWidget {
   final List messages;
@@ -23,6 +25,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
               children: [
                 Container(
                     padding: EdgeInsets.symmetric(vertical: 14, horizontal: 14),
+
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(

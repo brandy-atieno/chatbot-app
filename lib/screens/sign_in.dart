@@ -36,8 +36,10 @@ class _SignInState extends State<SignIn> {
                             borderRadius: BorderRadius.all(
                               Radius.circular(50.0),
                             )),
-                        hintText: 'Email'),
+                        hintText: 'Email',hintStyle: TextStyle(color:Colors.white)),
                     controller: EmailController,
+                                        style: TextStyle(color: AppColors.buttonText),
+
                     textInputAction: TextInputAction.next),
                 TextFormField(
                     decoration: const InputDecoration(
@@ -51,8 +53,12 @@ class _SignInState extends State<SignIn> {
                             borderRadius: BorderRadius.all(
                               Radius.circular(50.0),
                             )),
-                        hintText: 'Password'),
+                        hintText: 'Password',hintStyle: TextStyle(color:Colors.white)),
+                                                                obscureText:true,
+
                     controller: PasswordController,
+                                        style: TextStyle(color: AppColors.buttonText),
+
                     textInputAction: TextInputAction.done),
                 const Text('Forgot password ?',
                     style: TextStyle(color: AppColors.buttonText)),

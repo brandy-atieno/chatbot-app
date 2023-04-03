@@ -32,21 +32,7 @@ class Name extends StatelessWidget {
             child: Text(' Hey Sandie here ...',
                 style: TextStyle(color: AppColors.buttonText)),
           ),
-          Align(
-                      alignment: Alignment.centerRight,
         
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(100),
-              child: const Image(
-                  image: AssetImage('assets/images/images2-chatbot.jpg')),
-            ),
-          ),
-          const Align(
-                                alignment: Alignment.centerLeft,
-        
-            child: Text('I am excited to know you please select a name to continue',
-                style: TextStyle(color: AppColors.buttonText)),
-          ),
           TextFormField(
             decoration: const InputDecoration(
                 focusedBorder: OutlineInputBorder(
@@ -63,7 +49,10 @@ class Name extends StatelessWidget {
                 ),
                 // fillColor:,
                 hintText: 'Write a name ...',
+                
                 hintStyle: TextStyle(color: AppColors.buttonText)),
+                                style: TextStyle(color: AppColors.buttonText),
+
           ),
             
               TextButton(
@@ -73,6 +62,8 @@ class Name extends StatelessWidget {
                   },
                   style: TextButton.styleFrom(
                       backgroundColor: AppColors.button,
+                                                fixedSize: const Size(227, 61),
+
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0))),
 
