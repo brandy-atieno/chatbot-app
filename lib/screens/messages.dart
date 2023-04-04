@@ -42,7 +42,8 @@ class _MessagesScreenState extends State<MessagesScreen> {
                             : Color.fromARGB(255, 170, 134, 37).withOpacity(0.8)),
                     constraints: BoxConstraints(maxWidth: w * 2 / 3),
                     child:
-                        Text(widget.messages[index]['message'].text.text[0])),
+                        Text(widget.messages[index]['message'].text.text[0])
+                        ),
               ],
             ),
           );
