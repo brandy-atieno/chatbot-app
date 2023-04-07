@@ -68,7 +68,7 @@ class Name extends StatelessWidget {
                           borderRadius: BorderRadius.circular(30.0))),
 
                   child: const Text('Next',
-                      style: TextStyle(color: AppColors.buttonText)),
+                      style: TextStyle(color: AppColors.buttonText,fontSize:16.0)),
                 ),
               ],
             ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:bot_final/screens/messages.dart';
+import 'package:bot_final/utilities/color.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -25,29 +26,31 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FreeMindz'),
+        title: const Text('FreeMindz'),
       ),
+      // ignore: avoid_unnecessary_containers
       body: Container(
         child: Column(
           children: [
             Expanded(child: MessagesScreen(messages: messages)),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-              color: Color.fromARGB(255, 202, 64, 128),
+              color: AppColors.send,
               child: Row(
                 children: [
                   Expanded(
                       child: TextField(
                           controller: _controller,
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(fontSize: 16.0),
                           decoration:
-                              InputDecoration(hintText: 'Send a message ...',hintStyle: TextStyle(color:Colors.white)))),
+                              InputDecoration(hintText: 'Send a message ...'))),
                   IconButton(
                       onPressed: () {
                         sendMessage(_controller.text);
                         _controller.clear();
                       },
-                      icon: Icon(Icons.send))
+                      color: AppColors.buttonText,
+                      icon: const Icon(Icons.send))
                 ],
               ),
             )
