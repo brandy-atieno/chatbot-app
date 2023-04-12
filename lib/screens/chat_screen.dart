@@ -41,9 +41,9 @@ class _ChatScreenState extends State<ChatScreen> {
                   Expanded(
                       child: TextField(
                           controller: _controller,
-                          style: TextStyle(fontSize: 16.0),
+                          style: TextStyle(fontSize: 16.0,),
                           decoration:
-                              InputDecoration(hintText: 'Send a message ...'))),
+                              InputDecoration(hintText: 'Send a message ...',hintStyle: TextStyle(color:AppColors.buttonText)))),
                   IconButton(
                       onPressed: () {
                         sendMessage(_controller.text);
