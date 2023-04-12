@@ -40,9 +40,10 @@ class _MessagesScreenState extends State<MessagesScreen> {
                         color: widget.messages[index]['isUserMessage']
                             ? AppColors.bot
                             : AppColors.user.withOpacity(0.8)),
+                         
                     constraints: BoxConstraints(maxWidth: w * 2 / 3),
                     child:
-                        Text(widget.messages[index]['message'].text.text[0])
+                        Text(widget.messages[index]['message'].text.text[0],style: TextStyle(color:AppColors.buttonText),)
                         ),
               ],
             ),
