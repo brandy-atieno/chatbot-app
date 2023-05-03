@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:dialog_flowtter/dialog_flowtter.dart';
 import 'package:bot_final/screens/messages.dart';
 import 'package:bot_final/utilities/color.dart';
+import 'package:intl/intl.dart';
+
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
